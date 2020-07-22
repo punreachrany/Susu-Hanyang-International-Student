@@ -1,0 +1,19 @@
+1. 메인 스크린 View에서 발생하는 오류 해결하기
+2. BulletinBoardsEditEntry 에서 can't call setstate on a component that is not yet mounted 에러 해결하기
+3. BulletinBoardsList 만들기
+
+
+
+--창희가 구현해야될 부분--
+1. BulletinBoardsLists 에서 게시판 버튼을 누르면 해당 게시판에 해당하는 json 파일을 식별하여 보내주기
+    boardid와 boardname을 json으로 전달해줄 것임.
+2. BulletinBoardsEntries 에서 당겨 새로고침 시 새로고침된 가장 최신 데이터를 json 파일로 전달해주기
+3. BulletinBoardsEntries 에서 End Threshold에 도달 시 다음 15개 게시글을 json 파일로 전달해주기
+4. BulletinBoardsEntries, BulletinBoardsContents, PostMenu 에서 글을 새로 작성하거나 수정 요청 후 서버로 보내주는 json 파일에 따라
+   기존에 있던 글이면 덮어쓰기, 새로 작성된 글이면 데이터베이스에 등록하기
+5. BulletinBoardsEntries, BulletinBoardsContents, PostMenu 삭제 요청 시 해당 boardid, entryid, replyid 에 해당하는 DB 한 줄
+   지워주기
+6. 연속 댓글에 대한 replylevel 별 정렬 후 반환. (parentreply==replyid 일 경우 그대로 냅두고 replyid에 종속된 다른 replyid인 경우 replylevel에 따른 정렬)
+7. !!!가장 중요!!! -> DM 기능 구현
+
+각각을 재사용 가능하게끔 컴포넌트로 내가 구현할 수 있으니 그냥 API만 대강 만들어서 줘도 괜찮음.

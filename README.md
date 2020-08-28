@@ -26,4 +26,4 @@
    - 행사 및 학사 정보를 한 눈에 볼 수 있는 달력 기능
 
 ## 참고 문서
- - README 영문 : https://github.com/cngjsskaisme/exchange-react-native/blob/master/README_en.md
+ - README 영문 : https://github.com/punreachrany/Susu-Hanyang-International-Student/blob/master/README_en.md
